@@ -4,8 +4,9 @@ const Reset = ({ setCount }) => {
   return (
     <button
       className="reset-btn"
-      onClick={() => {
+      onClick={(event) => {
         setCount(0);
+        event.currentTarget.blur();
       }}
     >
       <ResetIcon className="reset-btn-icon" />
